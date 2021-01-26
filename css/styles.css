@@ -779,6 +779,10 @@ img {
 }
 
 .field {
+  width: 100%;
+}
+
+.field-input {
   position: relative;
   width: 100%;
   margin-bottom: 10px;
@@ -810,8 +814,8 @@ img {
 
 .input-icon {
   position: absolute;
-  top: 28px;
-  left: 15px;
+  top: 11px;
+  left: 12px;
   fill: var(--title-text-color);
 }
 
