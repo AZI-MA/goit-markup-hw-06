@@ -571,8 +571,8 @@ img {
   fill: currentColor;
   color: var(--icons-main-color);
 
-  transition: color, fill,
-    background-color var(--animation-duration) var(--timing-function);
+  transition: var(--animation-duration) var(--timing-function);
+  transition-property: color, fill, background-color;
 }
 
 .social-links:hover,
@@ -660,7 +660,7 @@ img {
   background-color: rgba(33, 150, 243, 0.9);
 
   transform: translatey(100%);
-  transition: transform var(--animation-duration) var(--timing-function);
+  transition: all var(--animation-duration) var(--timing-function);
   opacity: 0;
 }
 
@@ -863,7 +863,8 @@ img {
   top: 0;
 }
 
-.policy-check:checked + label::before {
+.policy-check:checked + label::before,
+.policy-check:focus + label::before {
   border: none;
   background-image: url(../images/icon-checked.svg);
   background-repeat: no-repeat;
