@@ -867,13 +867,17 @@ img {
   top: 0;
 }
 
-.policy-check:checked + label::before,
-.policy-check:focus + label::before {
+.policy-check:checked + label::before {
   border: none;
   background-image: url(../images/icon-checked.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.policy-check:focus + label::before {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .button.modal-btn {
